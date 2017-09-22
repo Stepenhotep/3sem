@@ -37,7 +37,7 @@ int main(){
 			
 				}
 				//puts(argv[2]);
-				execv(argv[0], argv);
+				execvp(argv[0], argv);
 				printf ("exec error");	
 	   		case -1:
 				exit(-1);
