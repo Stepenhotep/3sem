@@ -12,6 +12,8 @@ int main() {
    	switch(pid = fork()) {
    		case 0: 
 			execl("/bin/ls","ls","-l",NULL); // this is the code the child runs 
+		case -1:
+			exit(-1);
    		default: 
 			wait(&status); // this is the code the parent runs
    	}
