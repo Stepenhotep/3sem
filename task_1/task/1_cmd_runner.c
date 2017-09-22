@@ -14,7 +14,7 @@ int main(){
 				printf (">");
 				char s[100];
 				gets(s);
-				printf ("\n %d \n", strcmp(s, "qwerty"));
+				//printf ("\n %d \n", strcmp(s, "qwerty"));
 				if (s[0] == 'q' && s[1] == 0) exit(-2);				
 				int len = strlen(s);
 				int n = 0;
