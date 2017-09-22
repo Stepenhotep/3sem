@@ -25,7 +25,7 @@ int main(){
 						s[i] = 0;
 					}
 				}
-				char **argv = (char *)malloc((n + 2)*sizeof(char*));
+				char **argv = (char **)malloc((n + 2)*sizeof(char*));
 				argv[n + 1] = NULL;
 				n = 0;
 				j = 0;
